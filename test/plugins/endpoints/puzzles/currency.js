@@ -48,7 +48,7 @@ describe('GET/puzzles/currency', function(){
       done();
     });
   });
-  it('should return decimil if decimil input', function(done){
+  it('should return decimal if decimal input', function(done){
     server.inject({method: 'GET', url: '/puzzles/currency/.09', credentials: {_id: 3}}, function(response){
       expect(response.statusCode).to.equal(200);
       expect(response.result.value).to.equal('$.09');
