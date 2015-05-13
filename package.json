@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "lab -v -c -t 100 -L -n eslint -e test",
-    "cov": "lab -s -r lcov | coveralls"
+    "coverage": "lab -s -r lcov | coveralls"
   },
   "dependencies": {
     "blipp": "^2.1.3",
